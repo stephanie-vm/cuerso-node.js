@@ -1,0 +1,13 @@
+function factorialNumerosEnteros (number) {
+         let total = 1;
+         for (i=1; i<=number; i++) {
+                  total = total * i;
+              }
+         return total;
+ }
+ 
+console.log(factorialNumerosEnteros(5));
+
+
+
+console.log(factorialNumerosEnteros(10));
