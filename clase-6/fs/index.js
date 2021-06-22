@@ -9,18 +9,18 @@ const user = {
 
 const data = JSON.stringify(user); 
 
-// fs.writeFile(`${path} holamundo.txt`, 'Hola mundo', function(err, data) {
-//     if (err)
-//             return console.log.error(err);
-//         console.log("Archivo creado y salvado");
-// })
+fs.writeFile(`${path} holamundo.txt`, 'Hola mundo', function(err, data) {
+    if (err)
+            return console.log.error(err);
+        console.log("Archivo creado y salvado");
+})
 
-// fs.appendFile(`${path}/holamundo.txt`,"Hola mundo Steph\n y grupo" , function(err, data) {
-//     if (err)
-//             return console.log.error(err);
-//         console.log("Archivo 2 actualizado");
-// })
-//Leer 
+fs.appendFile(`${path}/holamundo.txt`,"Hola mundo Steph\n y grupo" , function(err, data) {
+    if (err)
+            return console.log.error(err);
+        console.log("Archivo 2 actualizado");
+})
+Leer 
 
 fs.readFile(`${path}/holamundo.txt`, 'utf8', function (err, data) {
     if (err)
@@ -28,7 +28,7 @@ fs.readFile(`${path}/holamundo.txt`, 'utf8', function (err, data) {
         console.log(data);
         console.log(JSON.stringify(data));
         console.log(data)
-} )
+})
 
 fs.open(`${path}/nuevo.txt`, 'w', function(err, fd) {
     if (err)
