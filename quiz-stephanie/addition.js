@@ -10,9 +10,9 @@
 // arreglo son mayor a 0 recorriendo de uno 
 // en uno y si es así, se retorna el mayor
 function cifraMayoritaria(argumentos) {
-    let mayor = 0;
+    let mayor = 0; 
     for (let i = 0; i < argumentos.length; i++) {
-        if (parseInt(argumentos[i]) > mayor) {
+        if (parseInt(argumentos[i]) < mayor) {
             mayor = argumentos[i];
         }        
     }
